@@ -2,7 +2,7 @@
 
 
 .. toctree::
-    :caption: Introduction
+    :caption: Вступление
     :maxdepth: 2
 
     intro/architectures
@@ -14,7 +14,7 @@
 ---------	
 
 .. toctree::
-    :caption: Development
+    :caption: Разработка
     :maxdepth: 2
 
     development/installation
@@ -29,7 +29,7 @@
 
 .. toctree::
     :maxdepth: 2
-    :caption: Guides
+    :caption: Руководства
 
     bts_guide/tutorials/index
     bts_guide/index_faq
@@ -56,7 +56,7 @@
 	
 .. toctree::
     :maxdepth: 2
-    :caption: References
+    :caption: Рекомендации
 
     references/info_comunities
     references/info_bts_events
