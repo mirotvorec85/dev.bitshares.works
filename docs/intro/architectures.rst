@@ -1,110 +1,115 @@
 
 ******************************
-Introduction & Architectures 
+Вступление & Архитектура 
 ******************************
 
 
-Welcome to BitShares! In this section, we are looking into the BitShares Architecture overview (entities and structures), and how the Core team processes the development work.
+Добро пожаловать в BitShares! В этом разделе мы рассмотрим архитектуру BitShares (сущности и структуры) и то, как основная команда работает над разработкой.
 
-If developers who are interested in contributing to the Core team, they might want to check the Contribution Guide and the GitFlow to understand how BitShares-Core team handles the repository files and branches.  The Core team current project, issues, and releases plans are located in the BitShares Core repository under the Issues and the Projects tabs.m. 
 
-.. contents:: Table of Contents
+Разработчики которые заинтересованы в разработке ядра совмесно с командой , могут ознакомиться с гайдом по сотрудничеству и с GitFlow для понимания как команда Bitshares-Core управляет репозиторием с файлами и ветками. Текущий проект команды, планы выпусков и выпуски основной команды находятся в репозитории BitShares Core в разделах «Проблемы» и «Проекты».
+
+.. contents:: Оглавление
    :local:
    
 -------
 
 
 
-BitShares Members
+Члены BitShares
 ===================
 
-If you have a BitShares account, you are a BTS Holder, and you have a voting power to make decisions in the BitShares Community. (Read more: :ref:`BitShares Accounts <bts-accounts>` )
+Если у вас есть учетная запись BitShares, вы являетесь владельцем BTS и имеете право голоса для принятия решений в сообществе BitShares. (Прочитайте больше: :ref:`BitShares Accounts <bts-accounts>` )
 
 
 
 .. image:: ../../_static/structures/btsholders-v1.png
-        :alt: BitShares Architecture
+        :alt: Архитектура BitShares
         :width: 700px
         :align: center
 
 ----------------
 
-BitShares Architecture 
+Архитектура BitShares 
 ==========================
 
-GitHub Repositories and Entities
+GitHub Репозитории и объекты
 ------------------------------------
 
-This is an overview of BitShares Architecture image. The purpose of this image is to bring the main elements together and share what types of resources you might find in the BitShares Github repositories. 
+ 
+Это пример образа Архитектуры BitShares. Цель этого изображения собрать вместе и показать какие типы ресурсов вы можете найти в репозиториях BitShares
 
 .. image:: ../../_static/structures/bitshares-architecture-v3notop.png
-        :alt: BitShares Architecture
+        :alt: Архитектура BitShares 
         :width: 650px
         :align: center
 
 ----------------
 
-Key Design Concepts and the Features
+Основные концепции дизайна и особенности
 =========================================
 
-The below image is an overview of BitShares Architecture. The purpose of this image is to bring the main elements together and share what types of resources you might find in the BitShares Github repositories. 
+ 
+На изображении ниже представлен обзор архитектуры BitShares. Цель этого изображения собрать вместе и показать какие типы ресурсов вы можете найти в репозиториях BitShares
 
-Key points and fundamentals for the design:
+Ключевые моменты и основы дизайна:
 ---------------------------------------------
 
-- Keep everything in memory.
-- Keep the core business logic in a single thread.
-- Keep cryptographic operations (hashes and signatures) out of the core business logic.
-- Divide validation into state-dependent and state-independent checks.
-- Use an object-oriented data model.
-- Avoid synchronization primitives (locks, atomic operations)
-- Minimize unnecessary computation in the business logic processor.
+- Храните все в памяти.
+- Храните основную бизнес-логику в одном потоке.
+- Храните криптографические операции (хэши и подписи) вне основной бизнес-логики.
+- Разбейте валидацию на зависящие от состояния и не зависящие от состояния проверки.
+- Используйте объектно-ориентированную модель данных.
+- Избегайте синхронизации примитивов (блокировки, атомарные операции)
+- Минимизируйте ненужные вычисления в процессоре бизнес-логики.
     
 BitShares is built to aim high-performance blockchain and has been done to remove all calculations that are not part of the critical, order-dependent, evaluation from the core business logic, and to design a protocol the facilitates these kinds of optimizations.
 
+"BitShares предназначен для создания высокопроизводительного блокчейна и был сделан для удаления всех вычислений, которые не являются частью критической, зависящей от порядка, оценки из основной бизнес-логики, и для разработки протокола, облегчающего эти виды оптимизации."-Google
 
-BitShares Available Features
+
+Возможности BitShares
 --------------------------------
 
-BitShares can be made to function as a software, a network, a ledger, a bank, an exchange, and a currency all at once. (e.g., It can fulfill the role of a bank by maintaining a distributed ledger that tracks debt collateralized by other assets. You can find out that BitShares offers numerous features that are not available on other popular blockchain platforms.
+Блокчейн BitShares можно сделать так, чтобы он одновременно функционировал как программное обеспечение, сеть, бухгалтерская книга, банк, биржа и валюта. Например, он может выполнять роль банка, поддерживая распределенную бухгалтерскую книгу, которая отслеживает задолженность, обеспеченную другими активами. Вы узнаете, что BitShares предлагает множество функций, которые недоступны на других популярных платформах блокчейна.
 
-* **SmartCoins** are fungible, divisible and free from any restrictions. A SmartCoin is a cryptocurrency whose value is pegged to that of another asset, such as the US Dollar or gold. SmartCoins implement the concept of a collateralized loan and offer it on the blockchain.
-* **Decentralized Exchange** - BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. 
+* **SmartCoins** являются взаимозаменяемыми, делимыми и свободными от любых ограничений. SmartCoin - это криптовалюта, стоимость которой привязана к стоимости другого актива, такого как доллар США или золото. SmartCoins реализуют концепцию залогового кредита и предлагают его на блокчейне.
+* **Децентрализованный обмен** - Блокчейн BitShares обеспечивает высокопроизводительный децентрализованный обмен со всеми функциями, которые вы ожидаете в торговой платформе.
 
-  - Secure: All of the reserves are kept as BTS held on the blockchain, and they cannot be stolen, because there are no private keys that can be compromised to steal the reserves.
+  - Безопасный: все резервы хранятся как BTS, хранящиеся в блокчейне, и их нельзя украсть, потому что нет секретных ключей, которые могут быть скомпрометированы для кражи резервов.
    
-* Trading / Financial Services 
-* Transferable Named Account (human-friendly account name)
-* Globally unique account name and ID.
-* Dynamic Account Permissions
-* Multi-user control for account
-* Two authorities: owner and active keys
-* Transaction + multi-signature authority
-* **Proposed transaction infrastructure** 
+* Торговые / Финансовые услуги 
+* Переносимая имя учетной записи (удобное для пользователя имя учетной записи)
+* Уникальное имя учетной записи и идентификатор.
+* Динамические разрешения учетной записи
+* Многопользовательский контроль за аккаунтом
+* Два авторитета: владелец и активные ключи
+* Транзакция + авторизация по мультиподписям
+* **Предлагаемая транзакционная инфраструктура** 
 
-  - witch tracks partially approved transactions.
-  - It can be used for a scheduled payment 
+  - Отслеживание частично одобренных сделок
+  - Можно использовать для запланированного платежа
    
-* Fees calculation
+* Расчет коммисий
 
-  - Transaction fee
-  - Fee Schedules 
+  - Комиссия за перевод
+  - Коммисионные тарифы 
    
-* Assets - **User Issues Asset (UIA)** 
+* Активы(Assets) - **Пользовательские активы - User Issues Asset (UIA)** 
 
-  - to help facilitate profitable business models for certain types of services.
-  - *Use Cases* (Event tickets, Reward points, privatized SmartCoins, Predictions Market, more).
-  - How to profit (i.e.,Fee pools)
+  - помогать созданию выгодных бизнес-моделей для определенных видов услуг.
+  - *Варианты использования* (билеты на мероприятия, бонусные баллы, приватные SmartCoins, рынок прогнозов и т.д.).
+  - получение прибыли (т.е,Коммисионные пулы)
 	 
-* BitAsset - bitUSD, bitEUR, bitCNY, and others.       
-* **Delegated Proof of State Consensus (DPOS)** 
+* BitAsset - bitUSD, bitEUR, bitCNY, и другие.       
+* **Делегативное доказательство статуса Консенсуса - Delegated Proof of State Consensus (DPOS)** 
   
-  - Under DPOS, BTS Holder has influence.
-  - A robust and flexible consensus protocol.  
+  - На DPOS, держатель BTS имеет влияние.
+  - Надежный и гибкий протокол консенсуса.  
   
-* Block Production by Elected witnesses
-* **Referral Program** - to incentivize people to bring in more people.
-* Vesting valance
+* Выпуск блоков избранными witnesses(свидетелями)
+* **Реферальная программа** - стимулирование пользователей для привлечения большего количества пользователей.
+* Вестинг Баланс
 
 ----------------
 
@@ -113,7 +118,7 @@ BitShares Cash Flow
 
 
 .. image:: ../../_static/output/BitShares-Cashflow2.png
-        :alt: BitShares Architecture
+        :alt: Архитектура BitShares 
         :width: 700px
         :align: center
 
@@ -124,25 +129,27 @@ BitShares Cash Flow
 
 .. _trx-performance-explorer:
 
-Blockchain Observation
+Иследование блокчейна
 ===============================
 
 Bitshares Block Explorer
 -------------------------------
 
-BitShares Explorer shows BitShares Blockchain information. You can observe BitShares Blockchain *Health* Status (head_block_num, head_block_age, chain_id, etc.), how transactions processing, assets volume, and members.
+BitShares Explorer показывает информацию о цепочке блоков BitShares.  Вы можете наблюдать состояние работоспособности блокчейна BitShares (head_block_num, head_block_age, chain_id и т.д.), Порядок обработки транзакций, объем активов и пользователей.
 
-If you would like to see more detailed information, the Open Explorer offers other information tabs (i.e., Operations, Proxies, Markets, SmartCoins, UIAs, and Holders) to view.
+Если вы хотите увидеть более подробную информацию, Open Explorer предлагает для просмотра другие параметры (например, «Операции», «Прокси-серверы», «Рынки», «SmartCoins», «UIA» и «Держатели»).
 
 - `Cryptofresh  <https://www.cryptofresh.com/>`_
 - `Open Explorer <http://open-explorer.io/>`_
 - `bts.ai <https://bts.ai/>`_
 
 
-Blockchain Activity
+Активность блокчейна
 ---------------------
 
 Blockchain Activity Matrix shows different tokens (assets) *Activity*, *Value*, and *Index*. It's interesting to check the CUI index is Capacity Utilization Index (a rate of blockchain daily activity to total blockchain capacity) to see how much numbers BitShares has.
+
+"Матрица активности блокчейна показывает различные токены (активы), активность , значение и индекс . Интересно проверить, что индекс CUI - это индекс использования емкости (показатель ежедневной активности блокчейна по отношению к общей емкости блокчейна), чтобы увидеть, сколько номеров имеет BitShares." -Google
 
 - `Block'tivity <http://blocktivity.info/>`_
   
