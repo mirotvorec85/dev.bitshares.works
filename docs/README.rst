@@ -1,6 +1,6 @@
 
 ****************************
-BitShares Developer Portal
+Портал разработчиков BitShares
 ****************************
 
 .. image:: bitshares-logo.png
@@ -10,19 +10,19 @@ BitShares Developer Portal
 		
 ----------
 
-.. centered:: **Welcome to the BitShares Developers Portal**
+.. centered:: **Добро пожаловать на портал разработчиков BitShares**
 
 
-Welcome to the documentation portal for the BitShares Blockchain. The content on this page is managed by the BitShares community and is constantly improved.
+Добро пожаловать на портал посвященный документации по блокчейну BitShares. Контент на этой странице управляется сообществом BitShares и постоянно совершенствуется.
 
-The purpose of this site is to provide in-depth documentation about the BitShares Blockchain and make it easier for users and developers to leverage the full power of the BitShares Blockchain.
+Цель этого сайта, предоставить исчерпывающую документацию о цепочке блокчейне BitShares и упростить пользователям и разработчикам использование всех возможностей блокчейна BitShares.
 
 
-- `BitShares Whitepaper <https://github.com/bitshares-foundation/bitshares.foundation/blob/master/download/articles/BitSharesBlockchain.pdf>`_
+- `Белая книгаBitShares  <https://github.com/bitshares-foundation/bitshares.foundation/blob/master/download/articles/BitSharesBlockchain.pdf>`_
 - `BitShares Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
-- `BitShares Bug Bounty Program <https://hackthedex.io/>`_
-- `BitShares Documentation - Users Guide <http://how.bitshares.works/en/latest/>`_
-- :ref:`BitShares Community <bitshares-communities>` 
+- `BitShares Bug Bounty Программа <https://hackthedex.io/>`_
+- `BitShares Документация - Руководство пользователя <http://how.bitshares.works/en/latest/>`_
+- :ref:`Сообщество BitShares <bitshares-communities>` 
 
 
 ----------
