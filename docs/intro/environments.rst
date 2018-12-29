@@ -2,18 +2,19 @@
     :class: strike
 	
 **************************
-Development Environments
+Среда разработки
 **************************
 
-.. contents:: Table of Contents
+.. contents:: Оглавление
    :local:
    
 -------
 
 
-BitShares offers you to install BitShares-Core into different platforms; :ref:`Linux:Ubuntu (x64) <build-ubuntu>` , :ref:`OS X <build-osx>` , and :ref:`Windows <build-windows>`.   There are dependencies to check when you download OpenSSL and  Boost. Please make sure which versions you downloaded. 
+BitShares позволяет вам установить BitShares-Core на различные платформы; :ref:`Linux:Ubuntu (x64) <build-ubuntu>` , :ref:`OS X <build-osx>` , and :ref:`Windows <build-windows>`.   Зависимости которые требуеться проверить при загрузке это OpenSSL и Boost. Пожайлуста, проверьте какие версии вы скачали.
 
-Also, if you are a Windows user, you have other two choices to install BitShares Core to your Windows (x64) Operation System.  One is :ref:`CLI-Wallet tools for Windows (x64) <cli-tool>` , another one is :ref:`Windows SubSystem for Linux (WSL) <build-wsl>` .
+Кроме того, если вы являетесь пользователем Windows, у вас есть два других варианта установки BitShares Core в операционной системе Windows (x64). Первый - :ref:`CLI-Wallet для Windows (x64) <cli-tool>` , Второй :ref:`Windows SubSystem for Linux (WSL) <build-wsl>` 
+
 
 The CLI-wallet tools for Windows (x64) allow you to have CLI wallet without the BitShares Core installation. After you download the cli-wallet tools (zip file) and unzip it, you will find all files you need to run CLI wallet.  
 
