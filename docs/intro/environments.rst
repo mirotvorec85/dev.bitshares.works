@@ -14,45 +14,44 @@
 BitShares позволяет вам установить BitShares-Core на различные платформы; :ref:`Linux:Ubuntu (x64) <build-ubuntu>` , :ref:`OS X <build-osx>` , and :ref:`Windows <build-windows>`.   Зависимости которые требуеться проверить при загрузке это OpenSSL и Boost. Пожайлуста, проверьте какие версии вы скачали.
 
 Кроме того, если вы являетесь пользователем Windows, у вас есть два других варианта установки BitShares Core в операционной системе Windows (x64). Первый - :ref:`CLI-Wallet для Windows (x64) <cli-tool>` , Второй :ref:`Windows SubSystem for Linux (WSL) <build-wsl>` 
+ 
+Инструмент CLI-wallet для Windows (x64) позволят вам использовать CLI-wallet без установки BitShares Core. После того, как вы загрузите Cli-Wallet (zip-файл) и разархивируете его, в нем вы найдете все файлы необходимые для запуска CLI-wallet.
 
+Другой вариант, Windows SubSystem for Linux (WSL). WSL предназначен для разработчика, который использует операционную систему Windows 10 (x64) и хочет собрать BitShares Core в Ubuntu.
 
-The CLI-wallet tools for Windows (x64) allow you to have CLI wallet without the BitShares Core installation. After you download the cli-wallet tools (zip file) and unzip it, you will find all files you need to run CLI wallet.  
-
-Another option, Windows SubSystem for Linux (WSL).  The WSL is for a developer who uses a Windows 10 (x64) Operation System and wants to build BitShares Core on Ubuntu. 
-
-> See :ref:`System Requirements <system-requirements-node>` .
+> See :ref:`Системные требования <system-requirements-node>` .
 
 
 -------------------
 
-BitShares Code and Files 
+Код и файлы BitShares 
 ===============================
 
 
-- Open Source program
-- Language uses (mainly): BitShares-Core(C++), python
+- Программа с открытым исходным кодом
+- Языки используются (в основном): BitShares-Core(C++), Python, JavaScript
 - `BitShares GitHub <https://github.com/bitshares>`_
-   - **BitShares-Core (C++)** - BitShares Blockchain implementation and command-line interface.
-   - **Bitshares-FC** - Fast-compiling C++ library 
-   - **BitShares python** - Fully featured client-side library for the BitShares Blockchain - written entirely in python.
-   - **BitShares-UI** - Fully featured Graphical User Interface / Reference Wallet for the BitShares Blockchain.
-   - **BSIPs** - BitShares Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the BitShares blockchain and technical ecosystem.
-   - **BitSharesjs** - JavaScript tools for BitShares Encryption and Serialization.
-   - **BitSharesjs-ws** - Javascript websocket interface for Bitshares 
-   - (more...)
+   - **BitShares-Core (C++)** - Реализация блокчейна BitShares и интерфейс командной строки.
+   - **Bitshares-FC** - Быстро компилируемая библиотека C ++ 
+   - **BitShares python** - Полнофункциональная клиентская библиотека для блокчейна BitShares - полностью написана на Python.
+   - **BitShares-UI** - Полнофункциональный графический интерфейс пользователя/ Рекомендованный кошелек для блокчейна BitShares.
+   - **BSIPs** - Предложения и протоколы по улучшению BitShares. В этих технических документах описывается процесс обновления и улучшения блокчейна BitShares и технической экосистемы.
+   - **BitSharesjs** - Инструменты JavaScript для шифрования и сериализации BitShares.
+   - **BitSharesjs-ws** - Javascript websocket интерфейс для Bitshares 
+   - (еще...)
 
 ----------
    
-What's your interests?
+Какие у вас интересы?
 ========================
 
-What would you like to know more about BitShares Blockchain? If you are interested to know about BitShares blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information. 
+Что бы вы хотели узнать больше о блокчейне BitShares? Если вам интересно узнать больше о происхождении блокчейна BitShares, его истории, и возможностях, посетите `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ и `bitshares.org <https://bitshares.org/>`_ для того чтобы узнать больше информации
 
-If yo do not have a BitShares account yet, you can use BitShares UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your BitShares account. Here is the latest `BitShares-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information. 
+Если у вас нет аккаунта в BitShares , вы можете воспользоваться графическим кошельком на сайте (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) или скачать  `Light Client Wallet <https://bitshares.org/download>`_  для создания аккаунта BitShares. Вот последняя версия `BitShares-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ . 
 
-If your interests are trying and learning BitShares features, you might want to use BitShares TestNet to experience them. If you are a developer who is interested to contribute to the BitShares Core team, you could download a developer branch and learn more about BitShares-Core current Project might be a good start. Select an appropriate branch when you install BitShares-Core.
+Если вам интересно попробовать и изучить функции BitShares, вы можете воспользоваться BitShares TestNet для того чтобы испытать их.Если вы разработчик, который заинтересован внести свой вклад в команду BitShares Core, вы можете скачать ветку для разработчиков и узнать больше о текущем проекте BitShares-Core, который может стать хорошим началом вашего вклада. Выберите соответствующую ветку при установке BitShares-Core.
 
-After you know which branch to download, your next step is the installation of BitShares-Core. Check the :ref:`BitShares Installation Guide <installation-guide>` and select your Operation System to follow the installation steps. 
+После того, как вы узнаете, какую ветку загрузить, следующим шагом будет установка BitShares-Core. Проверьте :ref:`Руководство по установке BitShares <installation-guide>` и выберите свою операционную систему, чтобы выполнить шаги установки. 
 
 .. image:: ../../_static/imgs/your-interests.png
         :alt: BitShares
@@ -60,7 +59,7 @@ After you know which branch to download, your next step is the installation of B
         :align: center
   
 
-BitSharea has great communities to support others and have discussions. Check out the :ref:`BitShares communities <bitshares-communities>` and join to meet other BTS holders!    
+В BitShares есть отличные сообщества, чтобы поддержать других разработчиков и проводить обсуждения разработки. Посмотрите :ref:`BitShares communities <bitshares-communities>` и присоединяйтесь чтобы встретиться с другими держателями BTS!    
   
 |
   
@@ -68,34 +67,34 @@ BitSharea has great communities to support others and have discussions. Check ou
    
    
    
-BitShares Core: Projects Guide 
+BitShares Core: Руководство по проектам 
 ==================================
 
-If you are interested to know or involve BitShares-Core developments, you will find the contribution guide, current project, issues and plans in this section. 
+Если вы заинтересованы в том, чтобы изучить или принять участие в разработке BitShares-Core, вы найдете руководство по вкладам, текущий проект, проблемы и планы в этом разделе.
 
-Project Guide and Milestones 
+Руководство по проекту и основные этапы
 ------------------------------
 
-- `Contribution Guide [DRAFT] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
-- `Project <https://github.com/bitshares/bitshares-core/projects/6>`_
-- `BitShares-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_ 
-- `Milestones and Plans <https://github.com/bitshares/bitshares-core/milestones>`_ 
-- `BitShares-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_ 
+- `Руководство по вкладам [Проект] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
+- `Проект <https://github.com/bitshares/bitshares-core/projects/6>`_
+- `BitShares-Core: текущие проблемы и запросы <https://github.com/bitshares/bitshares-core/issues>`_ 
+- `Этапы и Планы <https://github.com/bitshares/bitshares-core/milestones>`_ 
+- `BitShares-Core Релизы <https://github.com/bitshares/bitshares-core/releases>`_ 
 
 
-BitShares-Core (Team) 
+BitShares-Core (Команда) 
 ^^^^^^^^^^^^^^^^^^^^^^^
+ 
+Команда BitShares-Core - это команда разработчиков, которые управляют кодом репозитория BitShares-Core и решают проблемы, представленные другими разработчиками. Команда создает планы проекта для следующих выпусков и передает результат сообществу Bitshares.
 
-The BitShares-Core team is a team of developers who manage the BitShares-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community. 
+* Роли
 
-* Roles
-
-  - improving
-  - maintaining
-  - upgrading protocol if needed
-  - making Project plans for the future release
-  - creating/ announcing  Release 
-  - supporting the BitShares community/ answering questions
+  - улучшение
+  - поддержка
+  - обновление протокола при необходимости
+  - составление планов проекта для будущих релизов
+  - создание/ анонс релиза
+  - поддержка сообщества BitShares / ответы на вопросы
   
 	
 ------------------	
@@ -103,18 +102,18 @@ The BitShares-Core team is a team of developers who manage the BitShares-Core re
 BitShares Core: GitFlow
 =========================
 
-Purpose
+Цель
 -------------
 
-* The purpose of this document is to describe and define how changes flow into our code and through the various stages of development until it finally goes into production.
-* The general idea is based on `git-flow <https://datasift.github.io/gitflow/IntroducingGitFlow.html>`_
-* For our purposes, the general concept behind gitflow has been extended to allow for these additional needs:
+* Цель этого документа, описать и определить, как происходят изменения  в нашем коде на разных этапах разработки, пока он наконец, не перейдет в продакшн.
+* Общая идея основана на `git-flow <https://datasift.github.io/gitflow/IntroducingGitFlow.html>`_
+* Для наших целей концепция Gitflow была расширена, чтобы учесть дополнительные потребности:
 
-1. We have two different types of releases, mainnet and testnet, with a master-like branch for each one.
-2. We have to distinguish Consensus Impacting Changes (aka hardforks) from Non-Consensus Impacting Changes.
+1. У нас есть два различных выпуска, mainnet и testnet, с ветвью master для каждого.
+2. Мы должны различать изменения, влияющие на консенсус (хардфорки), и изменений, не влияющих на консенсус.
 
 
-Non-Consensus: Development / Release / Bugfix Workflows
+Без консенсуса: Разработка / Релиз / Исправление ошибок
 -----------------------------------------------------------
 
 .. image:: ../../_static/structures/bts-non-concensus.png
@@ -122,7 +121,7 @@ Non-Consensus: Development / Release / Bugfix Workflows
         :width: 750px
         :align: center
 
-Consensus: Development / Release / Bugfix Workflows
+При консенсусе: Разработка / Релиз / Исправление ошибок
 ------------------------------------------------------
 
 .. image:: ../../_static/structures/bts-concensus.png
@@ -131,40 +130,40 @@ Consensus: Development / Release / Bugfix Workflows
         :align: center
 
 
-Goals To Achieve
+Цели
 ---------------------
 
-1. Maintain two independent release versions, testnet and mainnet.
-2. Decouple development from releases, i. e. maintain the ability to create emergency bugfixes for current release without bringing incomplete new features into production.
-3. Separate consensus-related changes from non-consensus-related changes.
-4. Keep development branches compatible with mainnet.
+1. Поддержите две независимые версии релиза, testnet и mainnet.
+2. Отделите разработку от релизов, то есть сохраняйте возможность создавать аварийные исправления для текущего релиза, не вводя в работу недоработанные новые функции.
+3. Отделяйте изменения, связанные с консенсусом и изменения не связанных с консенсусом.
+4. Поддерживайте совместимость веток разработки с mainnet.
 
-Basic Rules
+Основные правила
 ---------------
 
-1. Development always happens in private feature-branches. The only exception is a change that must be distinguished in the destination branch (typical example: hardfork date in testnet).
-2. Features are merged after they are reasonably complete, i. e. they come with unit tests that provide reasonable coverage and do not report any errors.
-  - "Completed" features that are not consensus-related are merged into "develop".
-  - "Completed" features that are consensus-related are merged into the "hardfork" branch, with a hardfork date in the far future.
-  - All merges into "develop" or "hardfork" are performed via github PR's and require review and approval from core source (if the PR is created by a core dev at least one other core dev must review and approve).
-  - To maintain a clean history and make reviewing and merging easier, feature branches must be rebased onto current "develop" (or "hardfork") before creating a PR.
-  - Merges are always done as real merges, not as fast-forwards, and not squashed. 
-3. Core devs coordinate regular merges from "develop" into "hardfork".
-4. Both "develop" and "hardfork" should always remain compatible with mainnet, i. e. a full replay must be possible.
+1. Разработка всегда происходит в приватных тематических ветках. Единственным исключением является изменение, которое необходимо разместить в ветви master  (пример: дата хардфорка в testnet).
+2. Функции объединяются после того, как они достаточно доработаны, т.е. они идут с модульными тестами, которые обеспечивают стабильную работу и не сообщают о каких-либо ошибках.
+  - «Завершенные» функции, не связанные с консенсусом, объединяются в «Develop».
+  - «Завершенные» функции, связанные с консенсусом, объединяются в ветку «hardfork» с датой hardfork в далеком будущем.
+  - Все слияния с «Develop» или «hardfork» выполняются с помощью PR на github и требуют проверки и одобрения со стороны основного разработчика (если PR создается с помощью основного разработчика, по крайней мере один другой основной разработчик должен просмотреть и одобрить).
+  - Чтобы сохранить чистую историю и сделать обзор и объединение проще, ветви функций должны быть перенастроены на текущую «разработку» (или «хардфорк») перед созданием PR.
+  - Слияния всегда выполняются как настоящие слияния.
+3. Базовые разработчики координируют регулярные слияния из "develop" в "hardfork".
+4. "develop" и "hardfork" должны оставаться совместимыми с основной сетью, то есть полный откат должен быть возможным..
 
 |
 
 --------------
 
-How To Create a Release
+Как создать релиз
 ---------------------------
 
-For a release,
+Для выпуска,
 
-0. Bump stuff
+0. Изучить документацию 
 
-  1) Check whether need to bump ``DB_VERSION`` to force a replay after upgraded: if there is a data schema change, or logic change that affects historical data, the answer is yes.  
-  2) FC version usually has been bumped already during development, but it doesn't harm if check again.  
+  1) Проверьте, нужно ли повышать, DB_VERSION чтобы принудительно воспроизвести после обновления: если есть изменение схемы данных или логика, которая влияет на исторические данные, ответ - да. 
+  2) Версия FC обычно поднималась уже во время разработки, но это не повредит, если проверить снова.
   3) Bump docs sub-module which links to wiki.
 
 1. A "release" branch is created based on "develop" or "hardfork".
