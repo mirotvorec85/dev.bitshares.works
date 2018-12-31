@@ -1,10 +1,10 @@
 
 .. _lib-database:
 
-Database 
+База данных 
 =========================
 
-.. contents:: Table of Contents
+.. contents:: Оглавление
    :local:
    
 -------
