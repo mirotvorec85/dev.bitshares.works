@@ -12,24 +12,24 @@
 
 config.hpp
 -----------------
-The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
+Праметры блокчейна можно изменить в файле `libraries/chain/include/graphene/chain/config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ :
 
 .. code-block:: cpp 
 
-	#define GRAPHENE_SYMBOL "BTS"
-	#define GRAPHENE_ADDRESS_PREFIX "BTS"
+	#define GRAPHENE_SYMBOL "BTS"  // Символ корневого ассета
+	#define GRAPHENE_ADDRESS_PREFIX "BTS"  // Префикс корневого асета
 
-	#define GRAPHENE_MIN_ACCOUNT_NAME_LENGTH 1
+	#define GRAPHENE_MIN_ACCOUNT_NAME_LENGTH 1 // Минимальная и максимальная  длина имени 1-63 знака
 	#define GRAPHENE_MAX_ACCOUNT_NAME_LENGTH 63
 
-	#define GRAPHENE_MIN_ASSET_SYMBOL_LENGTH 3
+	#define GRAPHENE_MIN_ASSET_SYMBOL_LENGTH 3 // Минимальная и максимальная  длина названия ассета 1-16 знаков
 	#define GRAPHENE_MAX_ASSET_SYMBOL_LENGTH 16
 
 	#define GRAPHENE_MAX_SHARE_SUPPLY int64_t(1000000000000000ll)
 	#define GRAPHENE_MAX_SIG_CHECK_DEPTH 2
 	/**
-	 * Don't allow the committee_members to publish a limit that would
-	 * make the network unable to operate.
+	 * Не позволяйте  committee_members публиковать ограничение которое сделает неработоспособной
+	 * сеть.
 	 */
 	#define GRAPHENE_MIN_TRANSACTION_SIZE_LIMIT 1024
 	#define GRAPHENE_MIN_BLOCK_INTERVAL   1 /* seconds */
@@ -37,15 +37,15 @@ The blockchain parameters can be modified in the `libraries/chain/include/graphe
 
 	#define GRAPHENE_DEFAULT_BLOCK_INTERVAL  5 /* seconds */
 	#define GRAPHENE_DEFAULT_MAX_TRANSACTION_SIZE 2048
-	#define GRAPHENE_DEFAULT_MAX_BLOCK_SIZE  (2*1000*1000) /* < 2 MiB (less than MAX_MESSAGE_SIZE in graphene/net/config.hpp) */
-	#define GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION (60*60*24) // seconds,  aka: 1 day
-	#define GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL  (60*60*24) // seconds, aka: 1 day
-	#define GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS 3  // number of slots to skip for maintenance interval
-
+	#define GRAPHENE_DEFAULT_MAX_BLOCK_SIZE  (2*1000*1000) /* < 2 MiB (меньше чем MAX_MESSAGE_SIZE в graphene/net/config.hpp) */
+	#define GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION (60*60*24) // Секунд,  иначе : 1 день
+	#define GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL  (60*60*24) // Секунд, иначе: 1 день
+	#define GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS 3  // количество block_intervals пропущенных во время обслуживания
+	
 	#define GRAPHENE_MIN_UNDO_HISTORY 10
 	#define GRAPHENE_MAX_UNDO_HISTORY 10000
 
-	#define GRAPHENE_MIN_BLOCK_SIZE_LIMIT (GRAPHENE_MIN_TRANSACTION_SIZE_LIMIT*5) // 5 transactions per block
+	#define GRAPHENE_MIN_BLOCK_SIZE_LIMIT (GRAPHENE_MIN_TRANSACTION_SIZE_LIMIT*5) // 5 транзакций в блоке
 	#define GRAPHENE_BLOCKCHAIN_PRECISION                           uint64_t( 100000 )
 
 	#define GRAPHENE_BLOCKCHAIN_PRECISION_DIGITS                    5
